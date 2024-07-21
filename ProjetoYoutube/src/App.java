@@ -11,8 +11,12 @@ public class App {
         g[0] = new Gafanhoto("João", 18, "M", "juba");
         g[1] = new Gafanhoto("Juliana", 18, "F", "Jujuba");
 
-        System.out.println(g[0].toString());
+        Visualizacao vis[] = new Visualizacao[2];
+        vis[0] = new Visualizacao(g[0], v[2]);
+        vis[0].avaliar();
+        System.out.println(vis[0].toString());
 
-        System.out.println(v[0].toString());
+        //System.out.println(g[0].toString());
+        //System.out.println(v[0].toString());
     }
 }
